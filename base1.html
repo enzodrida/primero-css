@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Base 1 — Tipografia e Cores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- INSTRUÇÕES (resumo):
+    Objetivo: praticar seletores de elemento, classe e id; propriedades de cor, fonte e alinhamento.
+    Edite APENAS o arquivo CSS externo (style.css) que acompanha o kit.
+    Tarefas:
+      1) Defina uma fonte legível para o body e um tamanho base de 16px.
+      2) Aplique uma cor de fundo suave para a página.
+      3) Faça o título principal .hero-title ter destaque (tamanho maior e peso forte).
+      4) Estilize os links para estados normal, hover e active.
+      5) Deixe os itens da lista com espaçamento vertical confortável (line-height).
+  -->
+  <style>
+    body{
+      background-color: rgba(155, 223, 186, 0.6);
+      font-size: 16px;
+    }
+    p{
+      font-family: century gothic;
+    }
+    h1{
+      font-family: cascadia code;
+    }
+    h2{
+      font-family: cascadia code;
+    }
+    code{
+      background-color: rgba(173, 217, 255, 0.747);
+      border-radius: 5px;
+    }
+    .hero-title{
+      font-size: 45px;
+      text-align: center;
+      margin: 25px 0px 60px 0px;
+    }
+    #lead{
+      margin: 0px 0px 0px 20px;
+    }
+    .a:hover{
+      background-color: rgba(87, 177, 255, 0.747);
+      
+      border-radius: 15px;
+      cursor: grab;
+    }
+    .a:active{
+      color: rgba(255, 0, 0, 0.8);
+    }
+    a {
+      font-family: complex;
+      font-size: 16px;
+      text-decoration: none;
+    }
+    li{
+      list-style-type: none;
+    }
+    .tarefas{
+      margin: 0px 0px 25px 20px ;
+    }
+    .tarefas-lista{
+      list-style-type: decimal-leading-zero;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="hero-title">CSS Básico: Tipografia e Cores</h1>
+    <p id="lead">Neste exercício vamos aplicar estilos essenciais para melhorar a leitura e a hierarquia visual.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Texto e Hierarquia</h2>
+      <p>O <strong>CSS</strong> controla a apresentação do conteúdo em <em>HTML</em>. Vamos praticar propriedades de <code>font-family</code>, <code>font-size</code>, <code>line-height</code>, <code>color</code> e <code>background-color</code>.</p>
+    </section>
+    <section>
+      <h2>2. Links</h2>
+      <p>Estilize os links abaixo (normal, hover, active):</p>
+      <ul>
+        <li class="a"><a href="#tipos">Documento sobre seletores</a></li>
+        <li class="a"><a href="#acessibilidade">Guia rápido de acessibilidade</a></li>
+        <li class="a"><a href="#layout">Dicas de layout</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>3. Lista com espaçamento</h2>
+      <ul class="tarefas">
+        <li class="tarefas-lista">Ajustar espaçamento entre linhas.</li>
+        <li class="tarefas-lista">Escolher cores com contraste adequado.</li>
+        <li class="tarefas-lista">Definir estilos coerentes para títulos e parágrafos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Base 1 — 1º semestre • Turmas grandes</small>
+  </footer>
+</body>
+</html>
